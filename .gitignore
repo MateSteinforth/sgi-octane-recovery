@@ -1,0 +1,12 @@
+# Recovered disk data stays off GitHub: it holds other people's files and Bayer's research.
+recovered/
+*.cpio
+*.pdb
+*.ent
+*.psv
+MAIL.SAVED*
+
+# Runtime logs and console capture
+*.log
+octane.in
+.DS_Store

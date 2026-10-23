@@ -1,0 +1,6 @@
+#!/bin/sh
+# Start the IRIX desktop on the Mac (Xephyr display mac:2).
+# Lives on the Octane as /usr/local/bin/mac-desktop; mac/start-octane-desktop.sh runs it over rsh.
+DISPLAY=mac:2; HOME=/; USER=root; export DISPLAY HOME USER
+cd /; killall 4Dwm toolchest fm 2>/dev/null; sleep 1
+nohup /var/X11/xdm/Xsession.dt </dev/null >/tmp/xsession.log 2>&1 &
